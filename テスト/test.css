@@ -1,0 +1,114 @@
+.btn {
+    list-style: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #eee;
+    color: white;
+    background-color: #4788EE;
+}
+
+.box {
+    width: 100%;
+    height: 400px;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+li {
+    list-style: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tbl {
+    border: 1px solid #d8dadc;
+    border-top: 1px solid #d8dadc;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid #d8dadc;
+    font-size: 14px;
+}
+
+.tbl td {
+    padding: 7px;
+    border-top: none;
+    border-right: 1px solid #d8dadc;
+    border-bottom: 1px solid #d8dadc;
+    border-left: none;
+    word-break: break-all;
+}
+
+table {
+    margin: 0 0 10px;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.radio_wrap.radio_wrap_group_1 {
+    display: flex;
+    font-size: 14px;
+    justify-content: flex-start;
+}
+
+.radio_wrap.radio_wrap_group_1 div {
+    width: 50%;
+}
+
+input[type="radio"] {
+    display: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="radio"]+span {
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    display: inline;
+    left: 10px;
+    padding-left: 25px;
+}
+
+input[type="radio"]+span::before {
+    border: 1px solid #666;
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 12.8px;
+    height: 12.8px;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+input[type="radio"]:checked+span::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #4788EE;
+}
